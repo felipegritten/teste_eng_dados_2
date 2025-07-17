@@ -1,0 +1,3 @@
+tabelas:
+  - nome_tabela: silver_clientes.tabela_clientes
+    caminho_regra: ~./rules/glue_rule_silver.json

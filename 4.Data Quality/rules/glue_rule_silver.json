@@ -1,0 +1,11 @@
+{
+    "Name": "rules_silver",
+    "Ruleset": "Rules = [\n   RowCount between 198 and 794,\n    IsComplete \"cod_cliente\",\n    Uniqueness \"cod_cliente\" > 0.95,\n    IsComplete \"nm_cliente\",\n    Uniqueness \"nm_cliente\" > 0.95,\n    IsComplete \"nm_pais_cliente\",\n    IsComplete \"nm_cidade_cliente\",\n    Uniqueness \"nm_cidade_cliente\" > 0.95,\n    IsComplete \"nm_rua_cliente\",\n    Uniqueness \"nm_rua_cliente\" > 0.95,\n    IsComplete \"num_casa_cliente\",\n    Uniqueness \"num_casa_cliente\" > 0.95,\n    Completeness \"num_telefone_cliente\" >= 0.88,\n    ColumnLength \"num_telefone_cliente\" <= 14,\n    IsComplete \"dt_nascimento_cliente\",\n    Uniqueness \"dt_nascimento_cliente\" > 0.95,\n    IsComplete \"dt_atualizacao\",\n    IsComplete \"tp_pessoa\",\n    ColumnValues \"tp_pessoa\" in [\"PJ\",\"PF\"],\n    ColumnLength \"tp_pessoa\" = 2,\n    IsComplete \"vl_renda\",\n    IsComplete \"anomesdia\"\n]",
+    "TargetTable": {
+        "TableName": "tabela_cliente",
+        "DatabaseName": "silver_clientes",
+        "CatalogId": "915043506044"
+    },
+    "CreatedOn": "2025-07-17T14:11:27.791000+00:00",
+    "LastModifiedOn": "2025-07-17T14:13:55.542000+00:00"
+}
